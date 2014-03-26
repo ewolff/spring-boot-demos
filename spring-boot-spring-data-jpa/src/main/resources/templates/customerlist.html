@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout"
+	layout:decorator="layout">
+<head>
+<title>Customer : View all</title>
+</head>
+<body>
+	<h1 layout:fragment="header">Customer : View all</h1>
+	<div layout:fragment="content" class="container">
+		<table class="table table-bordered table-striped">
+			<thead>
+				<tr>
+					<td>ID</td>
+					<td>Name</td>
+					<td>Firstname</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:if="${customers.empty}">
+					<td colspan="3">No messages</td>
+				</tr>
+				<tr th:each="customer : ${customers}">
+					<td th:text="${customer.id}">1</td>
+					<td th:text="${customer.name}">Name</td>
+					<td th:text="${customer.firstname}">Firstname</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>
