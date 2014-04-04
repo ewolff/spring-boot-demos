@@ -19,8 +19,6 @@ import com.ewolff.springbootdatajpa.repository.CustomerRepository;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringApplicationConfiguration(classes = ControllerAndMain.class)
-@IntegrationTest
-@WebAppConfiguration
 @Transactional
 public class CustomerRepositoryTest {
 
