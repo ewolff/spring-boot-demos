@@ -28,7 +28,7 @@ public class WebIntegrationTest {
 	public void health() {
 		RestTemplate restTemplate = new RestTemplate();
 		assertTrue(restTemplate.getForObject("http://127.0.0.1:8080/health",
-				String.class).contains("ok"));
+				String.class).contains("UP"));
 	}
 
 }
