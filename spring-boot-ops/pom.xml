@@ -4,7 +4,6 @@
 	<groupId>com.ewolff</groupId>
 	<artifactId>spring-boot-ops</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
