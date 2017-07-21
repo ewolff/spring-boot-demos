@@ -20,7 +20,7 @@ public class WebIntegrationTest {
 	@Test
 	public void homePage() {
 		RestTemplate restTemplate = new RestTemplate();
-		assertEquals("hello", restTemplate.getForObject("http://127.0.0.1:" + serverPort, String.class));
+		assertEquals("hello\n", restTemplate.getForObject("http://127.0.0.1:" + serverPort, String.class));
 	}
 
 }

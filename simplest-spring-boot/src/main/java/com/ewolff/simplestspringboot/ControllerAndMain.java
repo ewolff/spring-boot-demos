@@ -11,7 +11,7 @@ public class ControllerAndMain {
 
 	@RequestMapping("/")
 	public String hello() {
-		return "hello";
+		return "hello\n";
 	}
 
 	public static void main(String[] args) {
